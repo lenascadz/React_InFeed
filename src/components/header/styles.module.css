@@ -1,0 +1,19 @@
+.header{
+    background-color: #0E0E1B;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logos{
+    display: flex;
+    align-items: center;
+    margin-left: 605px;
+}
+h1 {
+    color: #036FDB;
+    font-size: 64px;
+    margin-left: 10px;
+    font-family:'Roboto';
+    font-weight: 500;
+}
