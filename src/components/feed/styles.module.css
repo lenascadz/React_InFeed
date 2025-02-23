@@ -1,10 +1,10 @@
 .feedContainer {
     display: flex;
-    justify-content: space-between; /* Garante espaçamento uniforme */
+    gap: 2rem; /* Espaço entre os cards */
     align-items: flex-start; /* Alinha os cards pelo topo */
-    width: 100%; /* Ajusta a largura do container */
+    width: 90%; /* Ajusta a largura do container */
     max-width: 1250px;
-    margin: 40px auto;
+    margin: 40px 15px;
 }
 
 /* Ajuste para o card pessoal (esquerda) */
@@ -17,4 +17,19 @@
 .feedContainer > :last-child {
     flex: 2; /* Ocupa um espaço maior */
     max-width: 800px; /* Largura maior */
+}
+
+.postContainer {
+    display: flex;
+    flex-direction: column; /* Empilha os posts verticalmente */
+    gap: 1.5rem; /* Espaço entre os posts */
+    width: 100%;
+}
+
+.content {
+    font-family: "Inter", sans-serif; /* Fonte mais moderna */
+    font-size: 1rem;
+    line-height: 1.6; /* Adiciona espaçamento entre as linhas */
+    white-space: pre-line; /* Mantém as quebras de linha */
+    color: #d1d5db; /* Cinza claro para melhorar a leitura */
 }
