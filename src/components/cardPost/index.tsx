@@ -54,14 +54,15 @@ export default function CardPostagens({ nome, cargo, tempo, conteudo, fotoPerfil
             </div>
 
             <div className={styles.content}>
-                <p>{conteudo}</p> 
+                {/* Renderiza o conteúdo e interpreta <br /> como JSX */}
+                <p dangerouslySetInnerHTML={{ __html: conteudo }} />
             </div>
 
             <div className={styles.feedback}>
                 <h3>Deixe seu feedback</h3>
-                <textarea placeholder="Escreva um comentário..."></textarea> <br></br> 
+                <textarea placeholder="Escreva um comentário..."></textarea>
                 <button>Comentar</button>
             </div>
         </div>
     );
-};
+}
