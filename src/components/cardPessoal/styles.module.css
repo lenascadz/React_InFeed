@@ -1,53 +1,3 @@
-/* .container {
-    background-color: #fff;
-    display: flex;
-    width: 22.25rem;
-    height: 28.81rem;
-    justify-content: center;
-    gap: 2rem;
-    align-items: center;
-    border-radius: 1.25rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-}
-
-.container > div > img {
-    width: 7.19rem;
-    height: 7.19rem;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
-    object-fit: cover;
-    object-position: center;
-}
-
-.info {
-    width: 25rem;
-    height: 18rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.info > div {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-}
-
-.info > div > h2 {
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.info > div > h3 {
-    font-weight: 600;
-}
-
-.info > p {
-line-height: 1.3rem;
-} */
-
-
-
 
 .container {
     position: relative;
@@ -60,6 +10,7 @@ line-height: 1.3rem;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: 4rem 3.75rem;
 }
 
 /* Fundo com imagem */
@@ -76,6 +27,7 @@ line-height: 1.3rem;
 .fotoPerfil {
     width: 7rem;
     height: 7rem;
+    background: url('../src/assets/foto_helena');
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
@@ -99,11 +51,13 @@ line-height: 1.3rem;
 }
 
 .info h2 {
-    font-size: 1.5rem;
+    font-size: 2.20rem;
     margin: 0;
+    font-family: "Inter";
 }
 
 .info p {
-    font-size: 1rem;
+    font-size: 1.4rem;
     opacity: 0.8;
+    color: #c1c2ccb3;
 }
