@@ -1,0 +1,20 @@
+.feedContainer {
+    display: flex;
+    justify-content: space-between; /* Garante espaçamento uniforme */
+    align-items: flex-start; /* Alinha os cards pelo topo */
+    width: 100%; /* Ajusta a largura do container */
+    max-width: 1250px;
+    margin: 40px auto;
+}
+
+/* Ajuste para o card pessoal (esquerda) */
+.feedContainer > :first-child {
+    flex: 1; /* Ocupa um espaço menor */
+    max-width: 300px; /* Largura fixa */
+}
+
+/* Ajuste para o card de postagens (direita) */
+.feedContainer > :last-child {
+    flex: 2; /* Ocupa um espaço maior */
+    max-width: 800px; /* Largura maior */
+}

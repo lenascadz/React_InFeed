@@ -1,9 +1,10 @@
 /* Estilização do container principal */
 .container {
-    background-color: #0b1e3f;
+    background-color: #0E0E1B;
     color: white;
-    width: 40rem;
-    padding: 2rem;
+    width: 58rem;
+    /* height: 41rem; */
+    padding: 3.5rem;
     border-radius: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -56,6 +57,8 @@
 .content {
     margin: 1rem 0;
     font-size: 1rem;
+    color: #c1c2ccb3;
+    font-family: "Inter";
 }
 
 /* Caixa de feedback */
@@ -76,8 +79,8 @@
     padding: 1rem;
     font-size: 1rem;
     resize: none;
-    background-color: #1c2e4a;
-    color: white;
+    background-color: #dddddd;
+    color: black;
     outline: none;
 }
 
@@ -86,7 +89,7 @@
 }
 
 .feedback button {
-    width: 100%;
+    width: 8.70rem;
     margin-top: 0.5rem;
     padding: 0.8rem;
     border-radius: 0.5rem;

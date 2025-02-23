@@ -1,5 +1,5 @@
-import CardPessoal from "./components/cardPessoal";
-import CardPostagem from "./components/cardPost";
+
+import Feed from "./components/feed";
 import Header from "./components/header";
 
 
@@ -8,8 +8,7 @@ export default function App() {
     <>
       <Header />
 
-      <CardPessoal /> 
-      <CardPostagem />
+      <Feed />
     </>
       
   )

@@ -3,14 +3,13 @@
     position: relative;
     width: 22rem;
     height: 30rem;
-    background-color: #0b1e3f; /* Cor escura como na imagem */
+    background-color: #0E0E1B; /* Cor escura como na imagem */
     border-radius: 1rem;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    margin: 4rem 3.75rem;
 }
 
 /* Fundo com imagem */

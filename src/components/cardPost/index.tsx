@@ -15,16 +15,15 @@ export default function CardPostagem () {
             </div>
 
             <div className={styles.content}>
-                <p>Lorem ipsum</p>
-                <p>
-                    dolor sit amet. Ex laboriosam dolorem non tempore earum et voluptatem suscipit ut cupiditate nisi
-                    est odit voluptates...
-                </p>
+                <br></br> <p>  Lorem ipsum</p> 
+                <p>dolor sit amet. Ex laboriosam dolorem non tempore earum et voluptatem suscipit ut cupiditate nisi est odit voluptates. Nam magni amet ut ipsam molestiae aut facilis minus et quia reiciendis sed excepturi rerum ex consequatur minima! Ex rerum sunt et incidunt officia et veritatis deserunt. Sit soluta laboriosam et incidunt sequi et eius fugiat est temporibus similique rem illum natus sit unde eveniet. 
+                Non quos omnis ut autem labore nam vero consequatur est porro similique ad adipisci quisquam!
+                </p> <br></br>
             </div>
 
             <div className={styles.feedback}>
-                <h3>Deixe seu feedback</h3>
-                <textarea placeholder="Escreva um comentário...">Parabéns, lobinho! Continue assim!</textarea>
+                <h3>Deixe seu feedback</h3> <br></br>
+                <textarea placeholder="Escreva um comentário...">Parabéns, lobinho! Continue assim!</textarea> <br></br> <br></br>
                 <button>Comentar</button>
             </div>
         </div>
