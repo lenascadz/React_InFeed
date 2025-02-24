@@ -2,6 +2,17 @@ import styles from "./styles.module.css";
 import CardPessoal from "../cardPessoal";
 import CardPost from "../cardPost";
 
+const comentariosFixos = [
+    {
+      id: 1,
+      nome: "Felyppe Nunes",
+      foto: "/src/assets/foto_felyppe.png",
+      texto: "Est aspernatur quis eos natus dicta et internos",
+      likes: 7
+    }
+  ];
+  
+
 export default function Feed() {
     return (
         <div className={styles.feedContainer}>
