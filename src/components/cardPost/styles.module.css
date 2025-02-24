@@ -124,11 +124,11 @@
 /* 💬 Caixa de comentário */
 .commentCard {
     background-color: #1b1d2a;
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 0.5rem;
     width: 100%;
     color: #e4e6eb;
-    font-size: 1rem;
+    font-size: 1.15rem;
     line-height: 1.4;
 }
 
@@ -146,7 +146,7 @@
     background: none;
     border: none;
     color: #a6a6a6;
-    font-size: 0.9rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
