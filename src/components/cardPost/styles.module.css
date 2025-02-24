@@ -3,7 +3,6 @@
     background-color: #0E0E1B;
     color: white;
     width: 58rem;
-    /* height: 41rem; */
     padding: 3.5rem;
     border-radius: 1rem;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
@@ -105,4 +104,52 @@
     background-color: #0056b3;
 }
 
+/* 🏆 Estilização do container do comentário */
+.commentContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem; /* Espaço entre a foto e o conteúdo do comentário */
+    margin-top: 1rem;
+}
 
+/* 📷 Foto de perfil do comentário */
+.commentFoto {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #0056b3;
+}
+
+/* 💬 Caixa de comentário */
+.commentCard {
+    background-color: #1b1d2a;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    color: #e4e6eb;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+/* 🔘 Botões de Like e Delete */
+.commentActions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+/* Ajuste para separar os botões da caixa */
+.commentActions button {
+    background: none;
+    border: none;
+    color: #a6a6a6;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.commentActions button:hover {
+    color: white;
+}

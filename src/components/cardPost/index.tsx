@@ -6,6 +6,7 @@ interface Comment {
   author: string;
   text: string;
   likes: number;
+  foto: string;
 }
 
 interface CardPostagensProps {
@@ -14,6 +15,8 @@ interface CardPostagensProps {
   tempo: string;
   conteudo: string;
   fotoPerfil: string;
+  nomeUsuario: string;
+  fotoUsuario: string;
 }
 
 export default function CardPostagens({
@@ -22,6 +25,8 @@ export default function CardPostagens({
   tempo,
   conteudo,
   fotoPerfil,
+  nomeUsuario,
+  fotoUsuario
 }: CardPostagensProps) {
   const [comments, setComments] = useState<Comment[]>([]);
   const [newComment, setNewComment] = useState("");
@@ -32,9 +37,10 @@ export default function CardPostagens({
 
     const newCommentObject: Comment = {
       id: Date.now(),
-      author: "Usuário",
+      author: nomeUsuario,
       text: newComment,
       likes: 0,
+      foto: fotoUsuario,
     };
 
     setComments([...comments, newCommentObject]);
@@ -82,14 +88,15 @@ export default function CardPostagens({
 
         {/* Exibir os comentários dinâmicos */}
         {comments.map((comment) => (
-          <div key={comment.id} className={styles.commentCard}>
-            <p><strong>{comment.author}</strong></p>
-            <p>{comment.text}</p>
-            <div className={styles.commentActions}>
-              <button onClick={() => handleLikeComment(comment.id)}>
-                👍 Like ({comment.likes})
-              </button>
-              <button onClick={() => handleDeleteComment(comment.id)}>🗑️</button>
+          <div key={comment.id} className={styles.commentContainer}>
+            <img className={styles.commentFoto} src={comment.foto} alt={`Foto de ${comment.author}`} />
+            <div className={styles.commentCard}>
+              <p><strong>{comment.author}</strong></p>
+              <p>{comment.text}</p>
+              <div className={styles.commentActions}>
+                <button onClick={() => handleLikeComment(comment.id)}>👍 Like ({comment.likes})</button>
+                <button onClick={() => handleDeleteComment(comment.id)}>🗑️</button>
+              </div>
             </div>
           </div>
         ))}
